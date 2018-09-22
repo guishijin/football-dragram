@@ -5,6 +5,9 @@
       <span>Pick your theme</span>
     </div>
     <div class="choice">
+      <router-link to="/my">
+        <h1>自己的设计器</h1>
+      </router-link>
       <router-link to="/pitch/coach">
         <img class="coaching" src="../assets/coach.png">
       </router-link>
@@ -60,7 +63,7 @@
         height: 410px;
         transition: all 0.2s;
         &:hover{
-          transform: scale(1.03);
+          transform: scale(1.1);
         }
       }
       .coaching{

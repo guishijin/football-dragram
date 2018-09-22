@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import index from '../components/index.vue'
 import diagram from '../components/diagram.vue'
 import pitch from '../components/pitch.vue'
+import designer from '../components/designer.vue'
 
 Router.prototype.goBack = function () {
   this.isBack = true;
@@ -27,6 +28,11 @@ export default new Router({
       path: '/diagram/:type/:index',
       name: 'diagram',
       component: diagram,
+    },
+    {
+      path: '/my',
+      name: 'designer',
+      component: designer,
     },
   ]
 })

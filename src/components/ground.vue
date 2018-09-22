@@ -1,8 +1,24 @@
 <template>
   <div id="ground" ref="ground" :class="type === 'coach' ? 'coachBg' : 'standardBg'">
     <div :class="['field',type === 'coach' ? 'coachFieldBorder' : 'standardFieldBorder']" ref="field">
-      <canvas id="canvas" ref="canvas" width="1000px" height="563px" @mousedown="canvasDown($event)"  @mousemove="canvasMove($event)" @mouseup="canvasUp($event)" @dragover="dragOver($event)" @drop="dragFinished($event)"></canvas>
-      <input type="text" id="inputText" :class="type === 'coach' ? 'coachInputBorder' : 'standardInputBorder'" ref="inputText">
+
+      <canvas
+        id="canvas"
+        ref="canvas"
+        width="1000px" height="563px"
+        @mousedown="canvasDown($event)"
+        @mousemove="canvasMove($event)"
+        @mouseup="canvasUp($event)"
+
+        @dragover="dragOver($event)"
+        @drop="dragFinished($event)">
+      </canvas>
+
+      <input
+        type="text"
+        id="inputText"
+        :class="type === 'coach' ? 'coachInputBorder' : 'standardInputBorder'"
+        ref="inputText">
     </div>
   </div>
 </template>
