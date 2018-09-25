@@ -9,7 +9,7 @@
       <ul class="choices">
         <li class="choice">
           <div class="image">
-            <router-link :to="{path:'/diagram/' + type + '/15'}">
+            <router-link :to="{path:'/mydiagram/' + type + '/15'}">
               <template v-if="type === 'coach'">
                 <svg xmlns="http://www.w3.org/2000/svg" width="308" height="308" viewBox="0 0 370.75 370.75"><title>
                   <!-- react-text: 534 -->Asset 32<!-- /react-text --></title>
@@ -66,7 +66,7 @@
         </li>
         <li class="choice">
           <div class="image">
-            <router-link :to="{path:'/diagram/' + type + '/15'}">
+            <router-link :to="{path:'/mydiagram/' + type + '/15'}">
               <template v-if="type === 'coach'">
                 <svg xmlns="http://www.w3.org/2000/svg" width="308" height="308" viewBox="0 0 370.75 370.75"><title>
                   <!-- react-text: 534 -->Asset 32<!-- /react-text --></title>

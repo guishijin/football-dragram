@@ -5,6 +5,8 @@ import diagram from '../components/diagram.vue'
 import pitch from '../components/pitch.vue'
 import designer from '../components/designer.vue'
 
+import mydiagram from '../components/mydiagram.vue'
+
 Router.prototype.goBack = function () {
   this.isBack = true;
   window.history.go(-1)
@@ -34,5 +36,10 @@ export default new Router({
       name: 'designer',
       component: designer,
     },
+    {
+      path: '/mydiagram/:type/:index',
+      name: 'mydiagram',
+      component: mydiagram,
+    }
   ]
 })
